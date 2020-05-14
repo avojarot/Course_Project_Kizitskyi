@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Справочник_Гидролога.models
-{
+{[Serializable]
     class Admin : User
     {
     }

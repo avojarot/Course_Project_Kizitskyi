@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Справочник_Гидролога.models
 {
-   abstract class User
+    [Serializable]
+    abstract class User
     {
-        protected string Login { get; set; }
-        protected string Password { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
     }
 }

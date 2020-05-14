@@ -1,0 +1,8 @@
+C:\Users\USER\Desktop\Справочник_Гидролога\bin\Debug\Справочник_Гидролога.exe.config
+C:\Users\USER\Desktop\Справочник_Гидролога\bin\Debug\Справочник_Гидролога.exe
+C:\Users\USER\Desktop\Справочник_Гидролога\bin\Debug\Справочник_Гидролога.pdb
+C:\Users\USER\Desktop\Справочник_Гидролога\obj\Debug\Справочник_Гидролога.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Справочник_Гидролога\obj\Debug\Справочник_Гидролога.Properties.Resources.resources
+C:\Users\USER\Desktop\Справочник_Гидролога\obj\Debug\Справочник_Гидролога.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Справочник_Гидролога\obj\Debug\Справочник_Гидролога.exe
+C:\Users\USER\Desktop\Справочник_Гидролога\obj\Debug\Справочник_Гидролога.pdb

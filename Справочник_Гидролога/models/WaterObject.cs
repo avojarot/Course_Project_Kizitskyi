@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Справочник_Гидролога.models
 {
+    [Serializable]
     class WaterObject
     {
         public string Name { get; private set; }
