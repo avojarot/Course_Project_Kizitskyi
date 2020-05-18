@@ -43,6 +43,7 @@
             // Login
             // 
             this.Login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Login.BackColor = System.Drawing.SystemColors.Window;
             this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Login.Location = new System.Drawing.Point(72, 111);
             this.Login.Name = "Login";
@@ -52,6 +53,7 @@
             // Password
             // 
             this.Password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Password.BackColor = System.Drawing.SystemColors.Window;
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Password.Location = new System.Drawing.Point(72, 232);
             this.Password.Name = "Password";
@@ -62,7 +64,7 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(110, 159);
             this.panel1.Name = "panel1";
@@ -73,7 +75,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(35, 13);
             this.label2.Name = "label2";
@@ -84,7 +86,7 @@
             // LoginPanel
             // 
             this.LoginPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LoginPanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.LoginPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LoginPanel.Controls.Add(this.label1);
             this.LoginPanel.Location = new System.Drawing.Point(110, 38);
             this.LoginPanel.Name = "LoginPanel";
@@ -95,7 +97,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(49, 13);
             this.label1.Name = "label1";
@@ -125,10 +127,11 @@
             this.Registration.UseVisualStyleBackColor = true;
             this.Registration.Click += new System.EventHandler(this.Registration_Click);
             // 
-            // Form1
+            // First
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.Controls.Add(this.Registration);
             this.Controls.Add(this.Enter);
@@ -137,7 +140,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Login);
             this.MinimumSize = new System.Drawing.Size(400, 400);
-            this.Name = "Form1";
+            this.Name = "First";
             this.Text = "Вход/Регистрация";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

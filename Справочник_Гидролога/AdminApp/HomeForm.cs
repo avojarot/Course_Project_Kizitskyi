@@ -15,6 +15,7 @@ namespace AdminApp
     public partial class HomeForm : Form
     {
         HydrologistGuide guide;
+        bool changed;
         public HomeForm(HydrologistGuide guide)
         {
             InitializeComponent();
@@ -45,6 +46,7 @@ namespace AdminApp
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             guide.Load();
+            articlesBindingSource.ResetBindings(false);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,6 +57,8 @@ namespace AdminApp
         private void ArtDelete_Click(object sender, EventArgs e)
         {
             var item = ArticleList.SelectedItem as WaterObject;
+            if (item == null)
+                return;
            var mess = MessageBox.Show($"Действительно удалить статью {item.Name} ? ",
                "Удаление",MessageBoxButtons.YesNo);
             if (DialogResult.Yes == mess)
@@ -67,24 +71,65 @@ namespace AdminApp
         private void ArtEdit_Click(object sender, EventArgs e)
         {
             var item = ArticleList.SelectedItem as WaterObject;
+            if (item == null)
+                return;
             int index = guide.Articles.IndexOf(item);
-            var editForm = new ArticleForm(item);
+            var editForm = new EditArticleForm(item);
             editForm.ShowDialog();
-            guide.Articles[index] = new WaterObject(editForm.obj);
-            articlesBindingSource.ResetBindings(false);
+            if (editForm.DialogResult == DialogResult.OK)
+            {
+                guide.Articles[index] = new WaterObject(editForm.obj);
+                articlesBindingSource.ResetBindings(false);
+                changed = true;
+            }
         }
 
         private void ArtNew_Click(object sender, EventArgs e)
         {
-            var editForm = new ArticleForm();
+            var editForm = new EditArticleForm();
             editForm.ShowDialog();
-            guide.Articles.Add(new WaterObject(editForm.obj));
-            articlesBindingSource.ResetBindings(false);
+            if (editForm.DialogResult == DialogResult.OK)
+            {
+                guide.Articles.Add(new WaterObject(editForm.obj));
+                articlesBindingSource.ResetBindings(false);
+                changed = true;
+            }
         }
 
         private void HomeForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+         Application.Exit();
+        }
+
+        private void HomeForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (changed)
+            {
+              var dial =  MessageBox.Show("Сохранить изменения?","Сохранение",MessageBoxButtons.YesNoCancel);
+                if (dial == DialogResult.Cancel)
+                    e.Cancel = true;
+                else if (dial == DialogResult.Yes)
+                    guide.Save();
+
+            }
+        }
+
+        private void ArticleList_DoubleClick(object sender, EventArgs e)
+        {
+            var current = ArticleList.SelectedItem as WaterObject;
+            if (current == null)
+                return;
+            var art = new ArticleForm(current);
+            this.Hide();
+            art.ShowDialog();
+            if (art.DialogResult == DialogResult.Cancel)
+                this.Show();
+              
+        }
+
+        private void help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Здесь нет никакого хелпа", "Help");
         }
     }
 }

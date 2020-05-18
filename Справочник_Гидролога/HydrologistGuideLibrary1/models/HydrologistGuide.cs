@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Hydrologist.DAL;
 
 namespace Hydrologist.models
@@ -36,7 +37,7 @@ namespace Hydrologist.models
             for (int i = 0; i < n; ++i)
             {
                 var temp = new WaterObject($"Water{i}", "River", $"Region{i}",
-                    $"Regim{i}", i, $"Some editional data");
+                    i*10, i*100, $"Some editional data");
                 temp.Image = DAO.LoadTestImage();
                 Articles.Add(temp) ;
             }
@@ -68,6 +69,7 @@ namespace Hydrologist.models
         public void Load()
         {
             (new DAO(this)).Load();
+            
         }
     }
 }

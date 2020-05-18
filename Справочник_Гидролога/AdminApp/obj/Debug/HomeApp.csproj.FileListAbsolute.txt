@@ -12,3 +12,4 @@ C:\Users\USER\Desktop\Справочник_Гидролога\AdminApp\obj\Debug
 C:\Users\USER\Desktop\Справочник_Гидролога\AdminApp\obj\Debug\AdminApp.HomeForm.resources
 C:\Users\USER\Desktop\Справочник_Гидролога\AdminApp\obj\Debug\AdminApp.ArticleForm.resources
 C:\Users\USER\Desktop\Справочник_Гидролога\AdminApp\obj\Debug\AdminApp.First.resources
+C:\Users\USER\Desktop\Справочник_Гидролога\AdminApp\obj\Debug\AdminApp.EditArticleForm.resources

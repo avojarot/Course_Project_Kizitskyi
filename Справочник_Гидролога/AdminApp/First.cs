@@ -20,13 +20,12 @@ namespace AdminApp
         {
             InitializeComponent();
             guide = new HydrologistGuide();
-            guide.FillTestData(100);
-            //guide.Save();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          //guide.Load();
+           guide.Load();
         }
 
         private void Enter_Click(object sender, EventArgs e)
@@ -38,7 +37,6 @@ namespace AdminApp
             {
                 guide.CurrentUser = guide.admin;
                 var f2 = new HomeForm(guide);
-               
                 f2.Show();
                 this.Hide();
                 

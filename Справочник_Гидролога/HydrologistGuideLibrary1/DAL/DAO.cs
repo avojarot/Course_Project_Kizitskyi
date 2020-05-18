@@ -61,7 +61,7 @@ namespace Hydrologist.DAL
             void Copy<T>(List<T> list1, List<T> list2)
             {
                 list2.Clear();
-                list2.AddRange(list2);
+                list2.AddRange(list1);
             }
         }
     }

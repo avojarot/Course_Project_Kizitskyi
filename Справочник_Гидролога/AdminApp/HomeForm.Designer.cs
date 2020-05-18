@@ -45,6 +45,7 @@
             this.TestNew = new System.Windows.Forms.ToolStripMenuItem();
             this.TestDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.TestSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.help = new System.Windows.Forms.ToolStripMenuItem();
             this.ArticleList = new System.Windows.Forms.ListBox();
             this.articlesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hydrologistGuideBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -58,10 +59,12 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.articlesToolStripMenuItem,
-            this.testsToolStripMenuItem});
+            this.testsToolStripMenuItem,
+            this.help});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -70,6 +73,7 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripMenuItem,
             this.loadToolStripMenuItem,
@@ -107,6 +111,7 @@
             // 
             // articlesToolStripMenuItem
             // 
+            this.articlesToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.articlesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ArtEdit,
             this.ArtNew,
@@ -145,6 +150,7 @@
             // 
             // testsToolStripMenuItem
             // 
+            this.testsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.testsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TestEdit,
             this.TestNew,
@@ -178,11 +184,20 @@
             this.TestSearch.Size = new System.Drawing.Size(109, 22);
             this.TestSearch.Text = "Search";
             // 
+            // help
+            // 
+            this.help.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.help.Name = "help";
+            this.help.Size = new System.Drawing.Size(44, 20);
+            this.help.Text = "Help";
+            this.help.Click += new System.EventHandler(this.help_Click);
+            // 
             // ArticleList
             // 
             this.ArticleList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ArticleList.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ArticleList.DataSource = this.articlesBindingSource;
             this.ArticleList.DisplayMember = "Name";
             this.ArticleList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -193,6 +208,7 @@
             this.ArticleList.Size = new System.Drawing.Size(776, 324);
             this.ArticleList.Sorted = true;
             this.ArticleList.TabIndex = 1;
+            this.ArticleList.DoubleClick += new System.EventHandler(this.ArticleList_DoubleClick);
             // 
             // articlesBindingSource
             // 
@@ -205,8 +221,9 @@
             // 
             // LoginPanel
             // 
-            this.LoginPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoginPanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.LoginPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LoginPanel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.LoginPanel.Controls.Add(this.label1);
             this.LoginPanel.Location = new System.Drawing.Point(12, 39);
             this.LoginPanel.Name = "LoginPanel";
@@ -217,7 +234,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(3, 24);
             this.label1.Name = "label1";
@@ -236,6 +253,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "HomeForm";
             this.Text = "Справочник гидролога";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomeForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomeForm_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -271,5 +289,6 @@
         private System.Windows.Forms.ToolStripMenuItem TestSearch;
         private System.Windows.Forms.BindingSource articlesBindingSource;
         private System.Windows.Forms.BindingSource hydrologistGuideBindingSource;
+        private System.Windows.Forms.ToolStripMenuItem help;
     }
 }
