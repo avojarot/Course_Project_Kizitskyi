@@ -1,5 +1,0 @@
-C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Debug\HydrologistGuideLibrary1.dll
-C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Debug\HydrologistGuideLibrary1.pdb
-C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\obj\Debug\HydrologistGuideLibrary.csprojAssemblyReference.cache
-C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\obj\Debug\HydrologistGuideLibrary1.dll
-C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\obj\Debug\HydrologistGuideLibrary1.pdb
