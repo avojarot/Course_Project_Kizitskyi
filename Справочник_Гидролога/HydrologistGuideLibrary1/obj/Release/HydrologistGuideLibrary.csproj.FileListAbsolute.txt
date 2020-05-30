@@ -1,0 +1,14 @@
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\HydrologistGuideLibrary1.dll
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\HydrologistGuideLibrary1.pdb
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\obj\Release\HydrologistGuideLibrary.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\obj\Release\HydrologistGuideLibrary1.dll
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\obj\Release\HydrologistGuideLibrary1.pdb
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Болото.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Водохранилище.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Залив.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Лужа.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Море.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Озеро.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Океан.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Пролив.jpg
+C:\Users\USER\Desktop\Справочник_Гидролога\HydrologistGuideLibrary1\bin\Release\Pictures\Река.jpg

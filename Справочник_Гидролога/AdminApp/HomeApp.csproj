@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35D2770C-6E10-4BC7-A8C5-BFD296D06BF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AdminApp</RootNamespace>
+    <AssemblyName>AdminApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArticleForm.Designer.cs">
+      <DependentUpon>ArticleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditQuestionForm.Designer.cs">
+      <DependentUpon>EditQuestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTestForm.Designer.cs">
+      <DependentUpon>EditTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArticleHomeForm.Designer.cs">
+      <DependentUpon>ArticleHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditArticleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditArticleForm.Designer.cs">
+      <DependentUpon>EditArticleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchArticleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchArticleForm.Designer.cs">
+      <DependentUpon>SearchArticleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestingForm.Designer.cs">
+      <DependentUpon>TestingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSearchForm.Designer.cs">
+      <DependentUpon>TestSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestHomeForm.Designer.cs">
+      <DependentUpon>TestHomeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArticleForm.resx">
+      <DependentUpon>ArticleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditQuestionForm.resx">
+      <DependentUpon>EditQuestionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTestForm.resx">
+      <DependentUpon>EditTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticleHomeForm.resx">
+      <DependentUpon>ArticleHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditArticleForm.resx">
+      <DependentUpon>EditArticleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchArticleForm.resx">
+      <DependentUpon>SearchArticleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestingForm.resx">
+      <DependentUpon>TestingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSearchForm.resx">
+      <DependentUpon>TestSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestHomeForm.resx">
+      <DependentUpon>TestHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Hydrologist.models.HydrologistGuide.datasource" />
+    <None Include="Properties\DataSources\Hydrologist.models.Test.datasource" />
+    <None Include="Properties\DataSources\Hydrologist.models.WaterObject.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HydrologistGuideLibrary1\HydrologistGuideLibrary.csproj">
+      <Project>{49203836-a410-4bb6-8b4f-b8f020db07e7}</Project>
+      <Name>HydrologistGuideLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Draseart-Dumper-Weather.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
