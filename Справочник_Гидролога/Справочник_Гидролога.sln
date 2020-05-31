@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologistGuideLibrary", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeApp", "AdminApp\HomeApp.csproj", "{35D2770C-6E10-4BC7-A8C5-BFD296D06BF9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{A3046AA4-1E18-45B4-9688-1266A7E9D573}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{C02D2D19-AEDA-49A8-9A4E-6B1CF686034E}"
 	ProjectSection(SolutionItems) = preProject
-		..\записка.docx = ..\записка.docx
+		Documents\записка.docx = Documents\записка.docx
 	EndProjectSection
 EndProject
 Global
