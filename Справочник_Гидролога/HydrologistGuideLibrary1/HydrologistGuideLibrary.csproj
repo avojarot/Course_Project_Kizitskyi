@@ -49,7 +49,6 @@
     <Compile Include="models\HydrologistGuide.cs" />
     <Compile Include="models\Question.cs" />
     <Compile Include="models\Test.cs" />
-    <Compile Include="models\User.cs" />
     <Compile Include="models\WaterObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="models\QuestionOp.cs" />

@@ -15,12 +15,12 @@ namespace AdminApp
     public partial class TestingForm : Form
     {
         readonly Test test;
-        readonly User Current;
+        readonly CommonUser Current;
         int points;
         bool flagEnd;
         int currentQestion;
         //Создание формы и запуск тестирования
-        public TestingForm(Test t, User user)
+        public TestingForm(Test t, CommonUser user)
         {
             InitializeComponent();
             test = new Test(t);

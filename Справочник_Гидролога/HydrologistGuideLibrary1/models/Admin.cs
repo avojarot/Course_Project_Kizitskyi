@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace Hydrologist.models
 {[Serializable]
     //То же самое что и пользователь, но с раширеным фунционалом
-   public class Admin : User
+   public class Admin : CommonUser
     {
-        static public readonly string AdminFile = "admin.txt";
+        public Admin(string login, string password) : base(login,password) { }
         
     }
 }

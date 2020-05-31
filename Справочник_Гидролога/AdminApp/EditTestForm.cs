@@ -84,7 +84,8 @@ namespace AdminApp
         }
 
         private void ETF1_FormClosing(object sender, FormClosingEventArgs e)
-        {
+        {   if (this.DialogResult == DialogResult.Cancel)
+                return;
             EditArticleForm.Сhek(NameBox, e);
             bool res = test.Questions.Count == 0;
             if (res)

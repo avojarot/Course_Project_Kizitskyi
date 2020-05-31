@@ -12,6 +12,7 @@ namespace Hydrologist.DAL
         readonly HydrologistGuide Guide;
         readonly string  filePath = "guide.bin";
         readonly static string directoryName = @"Pictures\";
+       static readonly string AdminFile = "admin.txt";
 
         //Создание объекта
         public DAO(HydrologistGuide guide)
@@ -26,7 +27,7 @@ namespace Hydrologist.DAL
                 File.Create(filePath);
             }
             //не существует файла администратора
-            if (!File.Exists(Admin.AdminFile))
+            if (!File.Exists(AdminFile))
             {
                 RecriateAdmin();
             }
@@ -35,9 +36,9 @@ namespace Hydrologist.DAL
 
         private static void RecriateAdmin()
         {
-            var file = File.Create(Admin.AdminFile);
+            var file = File.Create(AdminFile);
             file.Dispose();
-            using (StreamWriter writer = File.AppendText(Admin.AdminFile))
+            using (StreamWriter writer = File.AppendText(AdminFile))
             {
                 const string login = "bond";
                 const string password = "007";
@@ -53,8 +54,7 @@ namespace Hydrologist.DAL
         //Загружает администратора
         static public Admin LoadAdmin()
         {
-            var admin = new Admin();
-            using (var rd = new StreamReader(Admin.AdminFile))
+            using (var rd = new StreamReader(AdminFile))
             {
 
                 string tempLogin = rd.ReadLine();
@@ -67,12 +67,11 @@ namespace Hydrologist.DAL
                     return LoadAdmin();
                     
                 }
-                admin.Login = tempLogin;
-                admin.Password = tempPassword;
+                var admin = new Admin(tempLogin,tempPassword);
+                return admin;
 
-                
-            }
-            return admin;
+
+            }    
         }
         //Сохраняет коллекцию в файл
         public void Save()

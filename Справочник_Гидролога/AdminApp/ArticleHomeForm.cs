@@ -132,7 +132,7 @@ namespace AdminApp
         //Попытка получить помощь
         protected void Help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Здесь нет никакого хелпа", "Help");
+            MessageBox.Show("Чтобы получить помощь, читайте инструкцию пользователя", "Help");
         }
 
         private void ArtSearch_Click(object sender, EventArgs e)

@@ -18,14 +18,14 @@ namespace Hydrologist.models
     {   public Admin admin { get; private set; }
         //Показывает Изменились ли данные
         public bool changed;
-        public User CurrentUser { get;set; }
-       public List<User> Users { get; private set; }
+        public CommonUser CurrentUser { get;set; }
+       public List<CommonUser> Users { get; private set; }
        public List<WaterObject> Articles { get; private set; }
        public List<Test> Tests { get; private set; }
 
         public HydrologistGuide()
         {
-            Users = new List<User>();
+            Users = new List<CommonUser>();
             Articles = new List<WaterObject>();
             Tests = new List<Test>();
            
@@ -33,7 +33,7 @@ namespace Hydrologist.models
         //Заполение иесиовыми данными
         public void FillTestData(int n)
         {   //Пользователи
-            Users = new List<User>();
+            Users = new List<CommonUser>();
             for(int i=0; i<n; ++i)
             {
                 Users.Add(new CommonUser($"User{i}", $"password{i}"));
